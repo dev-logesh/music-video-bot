@@ -2,6 +2,7 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
                             InlineKeyboardMarkup, InputMediaPhoto, Message)
 
 from Yukki import db_mem
+from config import OWNER_USERNAME
 
 
 def url_markup(videoid, duration, user_id, query, query_type):
@@ -34,6 +35,12 @@ def url_markup(videoid, duration, user_id, query, query_type):
                 callback_data=f"forceclose {query}|{user_id}",
             ),
         ],
+      [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
     ]
     return buttons
 
@@ -55,6 +62,12 @@ def url_markup2(videoid, duration, user_id):
                 text="🗑 Close Search",
                 callback_data=f"forceclose {videoid}|{user_id}",
             )
+        ],
+      [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
         ],
     ]
     return buttons
@@ -177,6 +190,12 @@ def secondary_markup(videoid, user_id):
             ),
             InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
         ],
+      [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
     ]
     return buttons
 
@@ -219,6 +238,12 @@ def primary_markup(videoid, user_id, current_time, total_time):
             ),
             InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
         ],
+      [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
     ]
     return buttons
 
@@ -242,6 +267,12 @@ def timer_markup(videoid, user_id, current_time, total_time):
                 text="🔗 More Menu", callback_data=f"other {videoid}|{user_id}"
             ),
             InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
+        ],
+      [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
         ],
     ]
     return buttons
@@ -297,5 +328,11 @@ audio_markup2 = InlineKeyboardMarkup(
             InlineKeyboardButton(text="⏹️", callback_data=f"stopcb"),
         ],
         [InlineKeyboardButton("🗑 Close Menu", callback_data="close")],
+      [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
     ]
 )
