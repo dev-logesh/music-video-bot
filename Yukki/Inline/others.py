@@ -2,6 +2,7 @@ from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
                             InlineKeyboardMarkup, InputMediaPhoto, Message)
 
 from Yukki import db_mem
+from config import OWNER_USERNAME
 
 
 def others_markup(videoid, user_id):
@@ -41,6 +42,12 @@ def others_markup(videoid, user_id):
                 callback_data=f"close",
             ),
         ],
+       [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
     ]
     return buttons
 
@@ -62,6 +69,12 @@ def download_markup(videoid, user_id):
                 text="⬅️ Go Back", callback_data=f"goback {videoid}|{user_id}"
             ),
             InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close"),
+        ],
+       [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
         ],
     ]
     return buttons
