@@ -1,6 +1,7 @@
 from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
                             InlineKeyboardMarkup, InputMediaPhoto, Message)
 
+from config import OWNER_USERNAME
 
 def check_markup(user_name, user_id, videoid):
     buttons = [
@@ -222,7 +223,7 @@ def third_playlist_markup(user_name, user_id, third_name, userid, videoid):
         ],
     ]
     return buttons
-  from config import OWNER_USERNAME
+  
 
 
 def paste_queue_markup(url):
