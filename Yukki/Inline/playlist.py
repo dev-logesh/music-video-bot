@@ -15,6 +15,12 @@ def check_markup(user_name, user_id, videoid):
             ),
         ],
         [InlineKeyboardButton(text="🗑 Close Menu", callback_data="close")],
+      [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
     ]
     return buttons
 
@@ -32,6 +38,12 @@ def playlist_markup(user_name, user_id, videoid):
             ),
         ],
         [InlineKeyboardButton(text="🗑 Close Menu", callback_data="close")],
+      [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
     ]
     return buttons
 
@@ -202,8 +214,15 @@ def third_playlist_markup(user_name, user_id, third_name, userid, videoid):
             ),
         ],
         [InlineKeyboardButton(text="🗑 Close", callback_data="close")],
+      [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
     ]
     return buttons
+  from config import OWNER_USERNAME
 
 
 def paste_queue_markup(url):
@@ -216,6 +235,7 @@ def paste_queue_markup(url):
         ],
         [InlineKeyboardButton(text="Checkout Queued Playlist", url=f"{url}")],
         [InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close")],
+      
     ]
     return buttons
 
@@ -230,6 +250,12 @@ def fetch_playlist(user_name, type, genre, user_id, url):
         ],
         [InlineKeyboardButton(text="Checkout Playlist", url=f"{url}")],
         [InlineKeyboardButton(text="🗑 Close Menu", callback_data=f"close")],
+      [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
     ]
     return buttons
 
@@ -242,6 +268,12 @@ def delete_playlist_markuup(type, genre):
                 callback_data=f"delete_playlist {type}|{genre}",
             ),
             InlineKeyboardButton(text="No!", callback_data=f"close"),
+        ],
+      [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
         ],
     ]
     return buttons
