@@ -24,6 +24,12 @@ stats1 = InlineKeyboardMarkup(
                 text="Assistant Stats", callback_data=f"assis_stats"
             )
         ],
+       [
+          InlineKeyboardButton(
+                text="♡𝑳𝑶𝑮𝑬𝑺𝑯 ⏤͟͟★",
+                url=f"https://t.me/cl_me_logesh",
+            ),
+        ],
     ]
 )
 
@@ -49,6 +55,12 @@ stats2 = InlineKeyboardMarkup(
             InlineKeyboardButton(
                 text="Assistant Stats", callback_data=f"assis_stats"
             )
+        ],
+       [
+          InlineKeyboardButton(
+                text="♡𝑳𝑶𝑮𝑬𝑺𝑯 ⏤͟͟★",
+                url=f"https://t.me/cl_me_logesh",
+            ),
         ],
     ]
 )
@@ -76,6 +88,12 @@ stats3 = InlineKeyboardMarkup(
                 text="Assistant Stats", callback_data=f"assis_stats"
             )
         ],
+       [
+          InlineKeyboardButton(
+                text="♡𝑳𝑶𝑮𝑬𝑺𝑯 ⏤͟͟★",
+                url=f"https://t.me/cl_me_logesh",
+            ),
+        ],
     ]
 )
 
@@ -101,6 +119,12 @@ stats4 = InlineKeyboardMarkup(
             InlineKeyboardButton(
                 text="Assistant Stats", callback_data=f"assis_stats"
             )
+        ],
+       [
+          InlineKeyboardButton(
+                text="♡𝑳𝑶𝑮𝑬𝑺𝑯 ⏤͟͟★",
+                url=f"https://t.me/cl_me_logesh",
+            ),
         ],
     ]
 )
@@ -128,6 +152,12 @@ stats5 = InlineKeyboardMarkup(
                 text="Assistant Stats", callback_data=f"assis_stats"
             )
         ],
+       [
+          InlineKeyboardButton(
+                text="♡𝑳𝑶𝑮𝑬𝑺𝑯 ⏤͟͟★",
+                url=f"https://t.me/cl_me_logesh",
+            ),
+        ],
     ]
 )
 
@@ -153,6 +183,12 @@ stats6 = InlineKeyboardMarkup(
             InlineKeyboardButton(
                 text="General Stats", callback_data=f"gen_stats"
             )
+        ],
+       [
+          InlineKeyboardButton(
+                text="♡𝑳𝑶𝑮𝑬𝑺𝑯 ⏤͟͟★",
+                url=f"https://t.me/cl_me_logesh",
+            ),
         ],
     ]
 )
