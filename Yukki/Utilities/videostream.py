@@ -118,7 +118,7 @@ async def start_live_stream(
     await add_active_chat(CallbackQuery.message.chat.id)
     await add_active_video_chat(CallbackQuery.message.chat.id)
     buttons = secondary_markup2(videoid, CallbackQuery.from_user.id)
-    cap = f"**Live Streaming**\n\n🎥<b>__Playing:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤**__Requested by:__** {CallbackQuery.from_user.mention}"
+    cap = f"**Live Streaming**\n\n🎥<b>__Playing:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤**__Requested by:__** {CallbackQuery.from_user.mention}\n💚**Any issues contact :** [♡𝑳𝑶𝑮𝑬𝑺𝑯 ⏤͟͟★](https://t.me/cl_me_logesh) ,"
     final_output = await CallbackQuery.message.reply_photo(
         photo=thumb,
         reply_markup=InlineKeyboardMarkup(buttons),
@@ -172,7 +172,7 @@ async def start_video_stream(
         final_output = await CallbackQuery.message.reply_photo(
             photo=thumb,
             caption=(
-                f"🎬<b>Video:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__Duration:__</b> {duration_min} \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤<b>__Requested by:__ </b>{CallbackQuery.from_user.mention} \n🚧<b>__ Video Queued at:__</b> <b>#{position}!</b>"
+                f"🎬<b>Video:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__Duration:__</b> {duration_min} \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤<b>__Requested by:__ </b>{CallbackQuery.from_user.mention} \n🚧<b>__ Video Queued at:__</b> <b>#{position}!</b>\n💚**Any issues contact :** [♡𝑳𝑶𝑮𝑬𝑺𝑯 ⏤͟͟★](https://t.me/cl_me_logesh)"
             ),
             reply_markup=InlineKeyboardMarkup(buttons),
         )
@@ -200,7 +200,7 @@ async def start_video_stream(
         buttons = primary_markup(
             videoid, CallbackQuery.from_user.id, duration_min, duration_min
         )
-        cap = f"**Video Streaming**\n\n🎥<b>__Playing:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤**__Requested by:__** {CallbackQuery.from_user.mention}"
+        cap = f"**Video Streaming**\n\n🎥<b>__Playing:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n💡<b>__Info:__</b> [Get Additional Information](https://t.me/{BOT_USERNAME}?start=info_{videoid})\n👤**__Requested by:__** {CallbackQuery.from_user.mention}\n💚**Any issues contact :** [♡𝑳𝑶𝑮𝑬𝑺𝑯 ⏤͟͟★](https://t.me/cl_me_logesh)"
         final_output = await CallbackQuery.message.reply_photo(
             photo=thumb,
             reply_markup=InlineKeyboardMarkup(buttons),
