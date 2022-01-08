@@ -65,6 +65,11 @@
       "value": "",
       "required": true
     },
+     "OWNER_USERNAME": {
+      "description": "fill with your telegram username (without "@")",
+      "value": "",
+      "required": false
+    },
     "STRING_SESSION1": {
       "description": "A Pyrogram String Session. One Assistant is Compulsory.",
       "value": "",
