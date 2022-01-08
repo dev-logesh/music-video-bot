@@ -76,7 +76,7 @@ async def welcome(_, message: Message):
                 ) = await get_assistant_details(ran_ass)
                 out = start_pannel()
                 await message.reply_text(
-                    f"Welcome To {MUSIC_BOT_NAME}\n\nPromote me as administrator in your group otherwise I will not function properly.\n\nAssistant Username:- @{ASS_USERNAME}\nAssistant ID:- {ASS_ID}",
+                    f"Welcome To {MUSIC_BOT_NAME}\n\nPromote me as administrator in your group otherwise I will not function properly.\n\nAssistant Username:- @{ASS_USERNAME}\nAssistant ID:- {ASS_ID}\n💚**Any issues contact :** [♡𝑳𝑶𝑮𝑬𝑺𝑯 ⏤͟͟★](https://t.me/cl_me_logesh)",
                     reply_markup=InlineKeyboardMarkup(out[1]),
                 )
             if member.id in ASSIDS:
@@ -101,7 +101,7 @@ async def useradd(_, message: Message):
     await asyncio.gather(
         message.delete(),
         message.reply_text(
-            f"Thanks for having me in {message.chat.title}.\n{MUSIC_BOT_NAME} is alive.\n\nFor any assistance or help, checkout our support group and channel.",
+            f"Thanks for having me in {message.chat.title}.\n{MUSIC_BOT_NAME} is alive.\n\nFor any assistance or help, checkout our support group and channel.\n💚**Any issues contact :** [♡𝑳𝑶𝑮𝑬𝑺𝑯 ⏤͟͟★](https://t.me/cl_me_logesh)",
             reply_markup=InlineKeyboardMarkup(out[1]),
         ),
     )
@@ -232,7 +232,7 @@ async def start_markup_check(_, CallbackQuery):
         else:
             current = "Everyone"
         await CallbackQuery.edit_message_text(
-            text=f"{text}\n\n**Group:** {c_title}\n\nCurrently Who Can Use {MUSIC_BOT_NAME}:- **{current}**\n\n**⁉️ What is This?**\n\n**👥 Everyone :-**Anyone can use {MUSIC_BOT_NAME}'s commands(skip, pause, resume etc) present in this group.\n\n**🙍 Admin Only :-**  Only the admins and authorized users can use all commands of {MUSIC_BOT_NAME}.",
+            text=f"{text}\n\n**Group:** {c_title}\n\nCurrently Who Can Use {MUSIC_BOT_NAME}:- **{current}**\n\n**⁉️ What is This?**\n\n**👥 Everyone :-**Anyone can use {MUSIC_BOT_NAME}'s commands(skip, pause, resume etc) present in this group.\n\n**🙍 Admin Only :-**  Only the admins and authorized users can use all commands of {MUSIC_BOT_NAME}\n💚**Any issues contact :** [♡𝑳𝑶𝑮𝑬𝑺𝑯 ⏤͟͟★](https://t.me/cl_me_logesh).",
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     if command == "Dashboard":
