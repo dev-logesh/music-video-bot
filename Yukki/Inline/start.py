@@ -64,6 +64,13 @@ def start_pannel():
                 url=f"https://t.me/{OWNER_USERNAME}",
             ),
         ],
+          [
+
+       
+                    InlineKeyboardButton(
+                        "🕊.⋆source code༒۝꧂", url="https://github.com/LOGI-LAB/music-video-bot"
+                    )
+                ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}*", buttons
     if SUPPORT_CHANNEL and not SUPPORT_GROUP:
@@ -89,6 +96,13 @@ def start_pannel():
                 url=f"https://t.me/{OWNER_USERNAME}",
             ),
         ],
+          [
+
+       
+                    InlineKeyboardButton(
+                        "🕊.⋆source code༒۝꧂", url="https://github.com/LOGI-LAB/music-video-bot"
+                    )
+                ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
@@ -117,6 +131,13 @@ def start_pannel():
                 url=f"https://t.me/{OWNER_USERNAME}",
             ),
         ],
+          [
+
+       
+                    InlineKeyboardButton(
+                        "🕊.⋆source code༒۝꧂", url="https://github.com/LOGI-LAB/music-video-bot"
+                    )
+                ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
 
@@ -167,6 +188,13 @@ def private_panel():
                 url=f"https://t.me/{OWNER_USERNAME}",
             ),
         ],
+          [
+
+       
+                    InlineKeyboardButton(
+                        "🕊.⋆source code༒۝꧂", url="https://github.com/LOGI-LAB/music-video-bot"
+                    )
+                ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}*", buttons
     if SUPPORT_CHANNEL and not SUPPORT_GROUP:
@@ -193,6 +221,13 @@ def private_panel():
                 url=f"https://t.me/{OWNER_USERNAME}",
             ),
         ],
+          [
+
+       
+                    InlineKeyboardButton(
+                        "🕊.⋆source code༒۝꧂", url="https://github.com/LOGI-LAB/music-video-bot"
+                    )
+                ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
@@ -222,6 +257,13 @@ def private_panel():
                 url=f"https://t.me/{OWNER_USERNAME}",
             ),
         ],
+          [
+
+       
+                    InlineKeyboardButton(
+                        "🕊.⋆source code༒۝꧂", url="https://github.com/LOGI-LAB/music-video-bot"
+                    )
+                ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
 
