@@ -1,7 +1,7 @@
 from pyrogram.types import (CallbackQuery, InlineKeyboardButton,
                             InlineKeyboardMarkup, InputMediaPhoto, Message)
 
-from config import MUSIC_BOT_NAME, SUPPORT_CHANNEL, SUPPORT_GROUP
+from config import MUSIC_BOT_NAME, SUPPORT_CHANNEL, SUPPORT_GROUP , OWNER_NAME
 from Yukki import BOT_USERNAME
 
 
@@ -31,12 +31,12 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🕊.⋆Commands༒۝꧂", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="🔧 Settings", callback_data="settingm"
+                    text="🕊.⋆settings༒۝꧂", callback_data="settingm"
                 )
             ],
         ]
@@ -45,60 +45,78 @@ def start_pannel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🕊.⋆Commands༒۝꧂", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="🔧 Settings", callback_data="settingm"
+                    text="🕊.⋆settings༒۝꧂", callback_data="settingm"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="🕊.⋆official Group༒۝꧂", url=f"{SUPPORT_GROUP}"
                 ),
             ],
+           [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}*", buttons
     if SUPPORT_CHANNEL and not SUPPORT_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🕊.⋆Commands༒۝꧂", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="🔧 Settings", callback_data="settingm"
+                    text="🕊.⋆settings༒۝꧂", callback_data="settingm"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="🕊.⋆official channel༒۝꧂", url=f"{SUPPORT_CHANNEL}"
                 ),
             ],
+           [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🕊.⋆Commands༒۝꧂", callback_data="shikhar"
                 ),
             ],
             [
                 InlineKeyboardButton(
-                    text="🔧 Settings", callback_data="settingm"
+                    text="🕊.⋆settings༒۝꧂", callback_data="settingm"
                 )
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="🕊.⋆official channel༒۝꧂", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="🕊.⋆official Group༒۝꧂", url=f"{SUPPORT_GROUP}"
                 ),
             ],
+           [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
 
@@ -108,7 +126,7 @@ def private_panel():
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🕊.⋆Commands༒۝꧂", callback_data="shikhar"
                 ),
             ],
             [
@@ -117,13 +135,19 @@ def private_panel():
                     url=f"https://t.me/{BOT_USERNAME}?startgroup=true",
                 )
             ],
+           [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
     if not SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🕊.⋆Commands༒۝꧂", callback_data="shikhar"
                 ),
             ],
             [
@@ -134,16 +158,22 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="🕊.⋆official Group༒۝꧂", url=f"{SUPPORT_GROUP}"
                 ),
             ],
+           [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}*", buttons
     if SUPPORT_CHANNEL and not SUPPORT_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🕊.⋆Commands༒۝꧂", callback_data="shikhar"
                 ),
             ],
             [
@@ -154,16 +184,22 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="🕊.⋆official channel༒۝꧂", url=f"{SUPPORT_CHANNEL}"
                 ),
             ],
+           [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
     if SUPPORT_CHANNEL and SUPPORT_GROUP:
         buttons = [
             [
                 InlineKeyboardButton(
-                    text="🗂 Helper Commands Menu", callback_data="shikhar"
+                    text="🕊.⋆Commands༒۝꧂", callback_data="shikhar"
                 ),
             ],
             [
@@ -174,12 +210,18 @@ def private_panel():
             ],
             [
                 InlineKeyboardButton(
-                    text="📨Official Channel", url=f"{SUPPORT_CHANNEL}"
+                    text="🕊.⋆official channel༒۝꧂", url=f"{SUPPORT_CHANNEL}"
                 ),
                 InlineKeyboardButton(
-                    text="📨Support Group", url=f"{SUPPORT_GROUP}"
+                    text="🕊.⋆official Group༒۝꧂", url=f"{SUPPORT_GROUP}"
                 ),
             ],
+           [
+          InlineKeyboardButton(
+                text="🕊.⋆𝙆𝙄𝙉𝙂༒۝꧂",
+                url=f"https://t.me/{OWNER_USERNAME}",
+            ),
+        ],
         ]
         return f"🎛  **This is {MUSIC_BOT_NAME}**", buttons
 
@@ -275,6 +317,8 @@ def dashmarkup():
         [
             InlineKeyboardButton(text="💻 Cpu", callback_data="CPT"),
             InlineKeyboardButton(text="💽 Disk", callback_data="DIT"),
+            InlineKeyboardButton(text="♡𝑳𝑶𝑮𝑬𝑺𝑯 ⏤͟͟★", url="https://t.me/cl_me_logesh"),
+         
         ],
         [InlineKeyboardButton(text="🔙 Go back", callback_data="settingm")],
     ]
