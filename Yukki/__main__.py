@@ -82,7 +82,7 @@ async def initiate_bot():
             status="[bold blue]Importation Completed!",
         )
     console.print(
-        "[bold green]Congrats!! Yukki Music Bot has started successfully!\n"
+        "[bold green]Congrats!! logi Music Bot has started successfully!\n"
     )
     try:
         await app.send_message(
@@ -214,7 +214,7 @@ async def initiate_bot():
             await LOG_CLIENT.join_chat("YukkiSupport")
         except:
             pass
-    console.print(f"└[red] Yukki Music Bot Boot Completed.")
+    console.print(f"└[red] logi Music Bot Boot Completed.")
     if STRING1 != "None":
         await pytgcalls1.start()
     if STRING2 != "None":
